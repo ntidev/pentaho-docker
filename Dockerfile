@@ -5,4 +5,5 @@ WORKDIR /pentaho
 RUN wget https://svwh.dl.sourceforge.net/project/pentaho/Pentaho%208.2/client-tools/pdi-ce-8.2.0.0-342.zip
 RUN unzip pdi-ce-8.2.0.0-342.zip
 RUN rm pdi-ce-8.2.0.0-342.zip -f
+COPY ./jtds-1.3.1.jar /pentaho/data-integration/lib
 WORKDIR /pentaho/data-integration
